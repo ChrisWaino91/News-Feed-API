@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+  <title>News Feed</title>
+</head>
+<body>
+
+
+  <div class="container containermain">
+    <div class="row">
+        <div class="col-md-6 mx-auto text-center mt-5 p-5 rounded">
+            <div class = "buttondiv">
+              <div>
+                <span style="margin-right: 15px;">Country:</span><select name="country_select" id="country_select">
+                <option value="GB">UK</option>
+                <option value="AU">AUS</option>
+                <option value="US">US</option>
+              </select>
+              </div>
+              <div style="margin: 40px;">
+              <span style="margin-right: 15px;">News Category:</span><select name="category_select" id="category_select">
+                  <option value="general">General</option>
+                  <option value="business">Business</option>
+                  <option value="entertainment">Entertainment</option>
+                  <option value="science">Science</option>
+                  <option value="sports">Sports</option>
+                </select>
+                </div>
+              <button type="button" class="btn btn-primary" id="getnews">
+                Get Latest News
+              </button>
+            </div>
+          </div>  
+    </div>
+    <div class="row">
+      <div class="col-md-6 mx-auto text-center mt-5 p-5 rounded">
+        <div id="w-news" class="list-group mt-3">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+  <script src="storage.js"></script>
+  <script src="newsapi.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

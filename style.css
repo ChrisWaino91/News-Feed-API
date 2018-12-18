@@ -1,0 +1,5 @@
+ul {margin-bottom: 60px !important;}
+li {list-style-type: none;}
+img {width: 300px; margin: 25px;}
+.custom-bg {background: #f3f3f3; padding: 25px;}
+.row .p-5 {padding-top: 0 !important;}
